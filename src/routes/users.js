@@ -4,7 +4,7 @@ const { validateSignup, validateLogin } = require('../services/user-service');
 const bcrypt = require('bcrypt');
 
 // Route to handle user signup
-router.post('/api/user/signup', async (req, res) => {
+router.post('/api/users/signup', async (req, res) => {
     try {
         // Validate the request body for signup
         const { error } = validateSignup(req.body);
@@ -31,7 +31,7 @@ router.post('/api/user/signup', async (req, res) => {
 });
 
 // Route to handle user login
-router.post('/api/user/login', async (req, res) => {
+router.post('/api/users/login', async (req, res) => {
     try {
         // Validate the request body for login
         const { error } = validateLogin(req.body);
