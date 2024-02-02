@@ -31,5 +31,3 @@ npm install
 ```bash
 npm start
 ```
-
-Alternatively, you can use `node .` to skip the build step. Open http://127.0.0.1:3000 in your browser.
